@@ -79,7 +79,7 @@ The name of the Specify repository you want to pull your design tokens and asset
 The Specify Personal Access Token used to authenticate your actions.
 
 {% hint style="info" %}
-Need a personal access token? [`Generate one`↗](https://specifyapp.com/user/personal-access-tokens)
+Need a personal access token? [Generate one↗](https://specifyapp.com/user/personal-access-tokens)
 {% endhint %}
 
 #### -R, --rules

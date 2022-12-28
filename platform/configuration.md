@@ -19,6 +19,17 @@ After reading this page, you will be able to setup a tailored transformation pip
 
 ## Examples
 
+The following examples are made to be used with the Specifuy CLI.
+
+Requirements:
+
+* a Specify repository containing design tokens
+* a valid personal access token.
+
+{% hint style="info" %}
+Need a personal access token? [Generate one↗](https://specifyapp.com/user/personal-access-tokens)
+{% endhint %}
+
 ### Basic
 
 Here's a basic configuration file that targets a Specify repository called `all-design-data` from the `@acme-inc` organization:

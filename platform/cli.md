@@ -10,8 +10,6 @@ description: >-
 
 Use the Specify CLI to integrate Specify in your workflow.
 
-
-
 You can use the Specify CLI to:
 
 * Pull your design tokens in the right format using parsers
@@ -19,6 +17,7 @@ You can use the Specify CLI to:
 * Sync a Specify repository
 
 ### Installation
+
 Install `@specifyapp/cli` via npm or Yarn.
 
 {% tabs %}
@@ -34,3 +33,13 @@ yarn global add @specifyapp/cli
 ```
 {% endtab %}
 {% endtabs %}
+
+### Commands
+
+#### Sync
+
+Sync a Specify repository to make sure you will pull the latest design tokens and assets available.
+
+```bash
+specify sync
+```

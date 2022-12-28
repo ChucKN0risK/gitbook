@@ -76,3 +76,19 @@ curl -X POST 'https://api.specifyapp.com/repository/{owner}/{name}/design-tokens
   -H 'Content-Type: application/json' \
   -d '{}'
 ```
+
+## Errors
+
+Specify uses standard HTTP response codes for success and failure notifications. Our errors are further classified by type. In general: Codes in the 2xx range indicate success. Codes in the 4xx range indicate an error that failed given the information provided (e.g., a required parameter was omitted). Codes in the 5xx range indicate an error with Specify's servers.
+
+Some 4xx errors that could be handled programmatically include an error code that briefly explains the error reported.
+
+### Attributes
+
+| Property     | Type     | Description                                                                                                                                           |
+| ------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `type`       | `string` | The type of error returned. One of `api_connection_error`, `api_error`, `authentication_error`, `invalid_request_error`, or `rate_limit_error`.       |
+| `statusCode` | `string` | For some errors that could be handled programmatically, a short string indicating the error code reported.                                            |
+| `message`    | `string` | A human-readable message providing more details about the error.                                                                                      |
+| `validation` | `string` | All invalid query / payload parameters. All invalid query / payload parameters. This property will be displayed on specific endpoints error response. |
+

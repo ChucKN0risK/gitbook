@@ -1,3 +1,9 @@
+---
+description: >-
+  Specify is built on core concepts such as sources, destinations, pipelines,
+  parsers. This page will help you understand all of them.
+---
+
 # Concepts
 
 ### Design API

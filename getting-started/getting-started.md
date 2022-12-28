@@ -75,16 +75,30 @@ Add your Specify `repository` from which you want to pull your design tokens and
 
 Generate a `personalAccessToken` for the CLI and add it in your configuration.
 
-```json
-{
-  "personalAccessToken": "<your-personal-access-token>",
+{% tabs %}
+{% tab title="JSON" %}
+<pre class="language-json" data-line-numbers><code class="lang-json">{
+  "repository": "@owner/name",
+<strong>  "personalAccessToken": "&#x3C;your-personal-access-token>",
+</strong>  "rules": []
 }
-```
+</code></pre>
+{% endtab %}
+
+{% tab title="JavaScript" %}
+<pre class="language-javascript" data-line-numbers><code class="lang-javascript">module.exports = {
+  repository: '@owner/name',
+<strong>  personalAccessToken: '&#x3C;your-personal-access-token>',
+</strong>  rules: [],
+};
+</code></pre>
+{% endtab %}
+{% endtabs %}
 
 ### 5. Pull your design tokens and assets
 
 Our configuration is ready and we can now pull our design tokens and assets using the `pull` command.
 
 ```bash
-> specify pull
+specify pull
 ```

@@ -60,17 +60,25 @@ Pull design tokens and assets from your Specify repository.
 specify pull [flags]
 ```
 
-
 ### Flags
+
 Flags are parameters you can pass while launching the command. All of these parameters are optional if you use a config file.
 
 #### -C, --config-path
+
 Relative path to your Specify config file.
 
 #### -r, --repository, <string>
+
 The name of the Specify repository you want to pull your design tokens and assets from.
 
-####  -p, --personal-access-token, <string>
+#### -p, --personal-access-token, <string>
+
 The Specify Personal Access Token used to authenticate your actions.
 
+{% hint style="info" %}
+Need a personal access token? [`Generate one`↗](https://specifyapp.com/user/personal-access-tokens)
+{% endhint %}
+
 #### -R, --rules, <[{ name, path, parsers... }]>
+Rules Specify will follow to generate design tokens and assets in your desired output format. See all available rules ↗.

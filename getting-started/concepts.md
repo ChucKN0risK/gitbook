@@ -28,7 +28,7 @@ A repository is like a folder containing your design tokens and assets in Specif
 
 ### Token type
 
-A Token type is a type of design token or asset supported by Specify like a colors, a text style or an icon. See all token types.
+A Token type is a type of design token or asset supported by Specify like a colors, a text style or an icon. [See all token types](../platform/token-types.md).
 
 ### Configuration
 

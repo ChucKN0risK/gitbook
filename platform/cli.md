@@ -8,7 +8,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/cli.jpg" alt=""><figcaption></figcaption></figure>
 
-### Introduction
+## Introduction
 
 Use the Specify CLI to integrate Specify in your workflow.
 
@@ -36,9 +36,9 @@ yarn global add @specifyapp/cli
 {% endtab %}
 {% endtabs %}
 
-### Commands
+## Commands
 
-#### Sync
+### Sync
 
 Sync a Specify repository to update its design tokens and assets.
 
@@ -46,7 +46,7 @@ Sync a Specify repository to update its design tokens and assets.
 specify sync [flags]
 ```
 
-#### Init
+### Init
 
 Initialize a Specify configuration tailored for a specific output format. See all configuration templates.
 
@@ -54,7 +54,7 @@ Initialize a Specify configuration tailored for a specific output format. See al
 specify init
 ```
 
-#### Pull
+### Pull
 
 Pull design tokens and assets from your Specify repository.
 
@@ -62,7 +62,7 @@ Pull design tokens and assets from your Specify repository.
 specify pull [flags]
 ```
 
-### Flags
+## Flags
 
 Flags are parameters you can pass while launching the command. All of these parameters are optional if you use a config file.
 
@@ -87,4 +87,5 @@ Need a personal access token? [`Generate one`↗](https://specifyapp.com/user/pe
 Rules Specify will follow to generate design tokens and assets in your desired output format.
 
 #### --dry-run
+
 Execute command without actually writing files. Use this flag to test the output of a configuration without generating files.

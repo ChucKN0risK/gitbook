@@ -40,4 +40,4 @@ A rule is a part of your configuration that helps you transform one or several T
 
 ### Parser
 
-A parser is a transformation step that runs inside a Pipeline. It helps you transform your design tokens and assets with ease and precision. [See all parsers](https://github.com/Specifyapp/parsers).
+Parsers are functions allowing you to transform design tokens and assets coming from Specify to fit your needs and company standards. [See all parsers](../platform/parsers.md#all-parsers-available).

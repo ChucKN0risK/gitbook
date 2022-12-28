@@ -8,4 +8,4 @@
 
 ## Platform
 
-* [Page 1](platform/page-1.md)
+* [CLI](platform/cli.md)

@@ -33,7 +33,7 @@ The data returned by a parser can either be:
 * A file so it can be used by people, frameworks, or scripts
 
 {% hint style="info" %}
-Parsers are what make Specify powerful and flexible. They help you be in total control of the design data you synchronize.
+Parsers are what make Specify powerful and flexible. They help you be in total control of the design data you pull from Specify.
 {% endhint %}
 
 Parsers are ordered and takes specific input to generate specific output. This way, we can easily test the input coming from the previous parser to check if the whole parsers process will work.

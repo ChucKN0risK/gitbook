@@ -38,7 +38,7 @@ Parsers are what make Specify powerful and flexible. They help you be in total c
 
 Parsers are ordered and takes specific input to generate specific output. This way, we can easily test the input coming from the previous parser to check if the whole parsers process will work.
 
-### Categories
+## Categories
 
 Parsers are classified in 2 categories: technology and utility.
 

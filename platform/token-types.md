@@ -11,7 +11,7 @@ A border is a line surrounding a UI element. According to your target platform c
 Borders are considered as [composite design tokens ↗](https://design-tokens.github.io/community-group/format/#composite-design-token) because they are composed of several design tokens.
 
 {% hint style="info" %}
-Looking for Border radius? You can add them as a [Measurement](token-types.md#measurement) type.
+Looking for Border radius? You can add them as a Measurement type.
 {% endhint %}
 
 ```typescript
@@ -41,7 +41,6 @@ interface BorderValue {
 ```
 
 ## Bitmap
-
 Bitmaps are raster images you can use in many contexts. They're basically any image you can display in a UI that is a .png, .jpeg, .webp, .avif...
 
 ```typescript
@@ -53,7 +52,6 @@ interface BitmapValue {
 ```
 
 ## Color
-
 Colors have meaning and support the purpose of the content, communicating things like hierarchy of information, interactive states, and the difference between distinct elements in your UI. Among all your design token types, color is surely one of the most important ones.
 
 ```typescript
@@ -66,8 +64,7 @@ interface ColorValue {
 ```
 
 ## Depth
-
-The Depth token type sets a UI element's position on the z-axis. More commonly called z-index on [Web ↗](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) and zIndex on [Android ↗](https://developer.android.com/reference/kotlin/androidx/compose/ui/package-summary#\(androidx.compose.ui.Modifier\).zIndex\(kotlin.Float\)) and [iOS ↗](https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617768-zindex).
+The Depth token type sets a UI element's position on the z-axis. More commonly called z-index on [Web ↗](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) and zIndex on [Android ↗](https://developer.android.com/reference/kotlin/androidx/compose/ui/package-summary#(androidx.compose.ui.Modifier).zIndex(kotlin.Float)) and [iOS ↗](https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617768-zindex).
 
 ```typescript
 interface DepthValue {
@@ -76,7 +73,6 @@ interface DepthValue {
 ```
 
 ## Duration
-
 Represents the length of time in milliseconds an animation or animation cycle takes to complete, such as 200 milliseconds (cf [DTCG ↗](https://design-tokens.github.io/community-group/format/#duration)).
 
 ```typescript
@@ -87,7 +83,6 @@ interface DurationValue {
 ```
 
 ## Font
-
 Fonts are files containing typefaces used by your text styles.
 
 In Specify, all font files are stored as .ttf files by default. You can pull and convert them on the fly thanks to the [convert-font ↗](https://github.com/Specifyapp/parsers/tree/master/parsers/convert-font) parser.
@@ -110,7 +105,6 @@ export interface FontValue {
 ```
 
 ## Gradient
-
 A gradient is the gradual blending from one color to another. It enables the designer to almost create a new color. It makes objects stand out by adding a new dimension to the design and adding realism to the object. In simple terms, gradients add depth.
 
 Gradients are considered as [composite design tokens ↗](https://design-tokens.github.io/community-group/format/#composite-design-token) because they are composed of several design tokens.
@@ -135,18 +129,16 @@ interface GradientValue {
 ```
 
 ## Measurement
-
 Measurement or [Dimension ↗](https://design-tokens.github.io/community-group/format/#dimension) design tokens help you define the size values.
 
 You can define from those values different design decisions like:
-
-* internal margins
-* external margins
-* a spacing scale
-* a border width
-* a breakpoint
-* a font size
-* border radii...
+- internal margins
+- external margins
+- a spacing scale
+- a border width
+- a breakpoint
+- a font size
+- border radii...
 
 ```typescript
 interface MeasurementValue {
@@ -156,7 +148,6 @@ interface MeasurementValue {
 ```
 
 ## Opacity
-
 Opacity design tokens help you set the opacity of UI elements.
 
 ```typescript
@@ -166,7 +157,6 @@ interface OpacityValue {
 ```
 
 ## Shadow
-
 Shadows help you communicate components elevation in your UIs. Popular variations and names include box-shadow, drop shadow, and many more.
 
 Shadows are considered as [composite design tokens ↗](https://design-tokens.github.io/community-group/format/#composite-design-token) because they are composed of several design tokens.
@@ -193,14 +183,90 @@ type ShadowValue = Array<{
 ```
 
 ## Text Style
-
 Text styles or typography helps your UI be usable. They create balance, hierarchy and structure for your content. Some say that "Web is 95% typography". To push this even further let's say UI are 95% typography. In other words, pay a great deal of attention to typography.
 
 A text style is composed of several child design decisions that could be considered as single design tokens like:
-
-* a line-height
-* a font size
-* a letter spacing
-* a font name
+- a line-height
+- a font size
+- a letter spacing
+- a font name
 
 Text styles are considered as [composite design tokens ↗](https://design-tokens.github.io/community-group/format/#composite-design-token) because they are composed of several design tokens.
+
+```typescript
+export type TextTransformValue =
+  | 'none'
+  | 'capitalize'
+  | 'uppercase'
+  | 'lowercase';
+
+export type TextDecorationValue =
+  | 'none'
+  | 'underline'
+  | 'overline'
+  | 'line-through'
+  | 'dashed'
+  | 'wavy';
+
+export type HorizontalAlignValue =
+  | 'initial'
+  | 'left'
+  | 'right'
+  | 'center'
+  | 'justify'
+  | 'start'
+  | 'end'
+  | 'justify-all'
+  | 'match-parent';
+
+export type VerticalAlignValue =
+  | 'initial'
+  | 'baseline'
+  | 'sub'
+  | 'super'
+  | 'text-top'
+  | 'text-bottom'
+  | 'middle'
+  | 'top'
+  | 'bottom';
+  
+export interface TextStyleValue {
+  color?: {
+    value: ColorValue;
+  };
+  font: {
+    value: FontValue;
+  };
+  fontSize: {
+    value: MeasurementValue;
+  };
+  lineHeight?: {
+    value: MeasurementValue;
+  };
+  letterSpacing?: {
+    value: MeasurementValue;
+  };
+  textAlign?: {
+    horizontal?: HorizontalAlignValue;
+    vertical?: VerticalAlignValue;
+  };
+  textTransform?: TextTransformValue;
+  fontVariant?: Array<string>;
+  textDecoration?: Array<TextDecorationValue>;
+  textIndent?: {
+    value: MeasurementValue;
+  };
+}
+```
+
+## Vector
+By "vectors" we mean vector images (e.g., SVG and PDF files). You can use them for 2 main purposes: iconography and illustration. In the following section we will only focus on icons.
+
+Icons act a visual aids to help users complete tasks. We advise you to have an harmonic set of icons you can use to draw attention to specific actions.
+
+```typescript
+interface VectorValue {
+  url: string;
+  format: 'svg' | 'pdf';
+}
+```

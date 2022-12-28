@@ -54,7 +54,7 @@ specify init
 
 #### Pull
 
-Pull design tokens and assets from a Specify repository. 
+Pull design tokens and assets from your Specify repository.
 
 ```bash
 specify pull [flags]
@@ -63,3 +63,14 @@ specify pull [flags]
 
 ### Flags
 Flags are parameters you can pass while launching the command. All of these parameters are optional if you use a config file.
+
+#### -C, --config-path
+Relative path to your Specify config file.
+
+#### -r, --repository, <string>
+The name of the Specify repository you want to pull your design tokens and assets from.
+
+####  -p, --personal-access-token, <string>
+The Specify Personal Access Token used to authenticate your actions.
+
+#### -R, --rules, <[{ name, path, parsers... }]>

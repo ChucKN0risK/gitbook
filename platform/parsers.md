@@ -37,3 +37,28 @@ Parsers are what make Specify powerful and flexible. They help you be in total c
 {% endhint %}
 
 Parsers are ordered and takes specific input to generate specific output. This way, we can easily test the input coming from the previous parser to check if the whole parsers process will work.
+
+### Categories
+
+Parsers are classified in 2 categories: technology and utility.
+
+### Technology
+
+Technology parsers help you transform your design tokens to specific technologies and formats (CSS Custom properties, SCSS, Tailwind, a Javascript theme object compatible with React Native...)
+
+Some examples:
+
+* [to-react-native](https://github.com/Specifyapp/parsers/tree/master/parsers/to-react-native)
+* [to-css-custom-properties](https://github.com/Specifyapp/parsers/tree/master/parsers/to-css-custom-properties)
+* [to-scss-variables](https://github.com/Specifyapp/parsers/tree/master/parsers/to-scss-variables)
+* [to-tailwind](https://github.com/Specifyapp/parsers/tree/master/parsers/to-tailwind)
+
+### Utility
+
+Utility parsers take care of "smaller" transformation. Like converting a pixel value to \`rem\` or transforming a string to kebabcase.
+
+Some examples:
+
+* [convert-font](https://github.com/Specifyapp/parsers/tree/master/parsers/convert-font)
+* [kebabcasify](https://github.com/Specifyapp/parsers/tree/master/parsers/kebabcasify)
+* [px-to-rem](https://github.com/Specifyapp/parsers/tree/master/parsers/px-to-rem)

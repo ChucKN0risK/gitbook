@@ -8,9 +8,9 @@ description: >-
 
 ### Introduction
 
-In this guide you’ll learn how to pull your first design tokens and assets using the Specify CLI.
+In this guide you’ll learn how to pull your first design tokens and assets for as CSS Custom Properties using the Specify CLI.
 
-
+{% embed url="https://www.youtube.com/watch?v=iFa-MEjFbmE" %}
 
 ### Before getting started
 
@@ -68,8 +68,6 @@ Add your Specify `repository` from which you want to pull your design tokens and
 </code></pre>
 {% endtab %}
 {% endtabs %}
-
-
 
 ### 4. Add your personal access token
 

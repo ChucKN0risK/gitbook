@@ -143,3 +143,14 @@ module.exports = {
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
+{% tabs %}
+{% tab title="Input" %}
+```bash
+```
+{% endtab %}
+
+{% tab title="Output" %}
+
+{% endtab %}
+{% endtabs %}

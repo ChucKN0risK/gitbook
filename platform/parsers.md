@@ -8,6 +8,8 @@ description: >-
 
 ## Why you need parsers
 
+<figure><img src="../.gitbook/assets/where-parsers-happen-dark.jpg" alt=""><figcaption><p>Parsers help you transform raw design tokens and assets returned by Specify to match your company standards</p></figcaption></figure>
+
 By default, without any parsers, Specify will return your design data as raw data:
 
 * Design tokens are returned in JSON

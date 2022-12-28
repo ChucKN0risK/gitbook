@@ -70,11 +70,11 @@ Flags are parameters you can pass while launching the command. All of these para
 
 Relative path to your Specify config file.
 
-#### -r, --repository,
+#### -r, --repository
 
 The name of the Specify repository you want to pull your design tokens and assets from.
 
-#### -p, --personal-access-token,
+#### -p, --personal-access-token
 
 The Specify Personal Access Token used to authenticate your actions.
 
@@ -82,6 +82,9 @@ The Specify Personal Access Token used to authenticate your actions.
 Need a personal access token? [`Generate one`↗](https://specifyapp.com/user/personal-access-tokens)
 {% endhint %}
 
-#### -R, --rules, <\[{ name, path, parsers... }]>
+#### -R, --rules
 
 Rules Specify will follow to generate design tokens and assets in your desired output format.
+
+#### --dry-run
+Execute command without actually writing files. Use this flag to test the output of a configuration without generating files.

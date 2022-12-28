@@ -10,3 +10,4 @@
 
 * [CLI](platform/cli.md)
 * [Token types](platform/token-types.md)
+* [Parsers](platform/parsers.md)

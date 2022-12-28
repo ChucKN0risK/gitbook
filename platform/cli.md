@@ -44,8 +44,6 @@ Sync a Specify repository to update its design tokens and assets.
 specify sync [flags]
 ```
 
-##### Flags
-
 #### Init
 
 Initialize a Specify configuration tailored for a specific output format. See all configuration templates.
@@ -62,8 +60,6 @@ Pull design tokens and assets from a Specify repository.
 specify pull [flags]
 ```
 
-##### Flags
-
 
 ### Flags
-#### 
+Flags are parameters you can pass while launching the command. All of these parameters are optional if you use a config file.

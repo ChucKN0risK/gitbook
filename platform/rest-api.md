@@ -68,7 +68,49 @@ Can contain an object or an array of objects. Each object corresponds to a speci
 
 .
 {% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Everything worked as expected." %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="No valid API key provided." %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="403: Forbidden" description="The API key doesn't have permissions to perform the request." %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="404: Not Found" description="The requested resource doesn't exist." %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="500: Internal Server Error" description="Something went wrong on Specify's end." %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
 {% endswagger %}
+
+Once you have your personal access token, you can pass it within the `Authorization` header of your request.
 
 ```bash
 curl -X POST 'https://api.specifyapp.com/repository/{owner}/{name}/design-tokens' \

@@ -138,7 +138,7 @@ interface GradientValue {
 
 Measurement or [Dimension ↗](https://design-tokens.github.io/community-group/format/#dimension) design tokens help you define size values.
 
-You can define from those values different design decisions like:
+Common design tokens can be defined from this type:
 
 * internal margins
 * external margins

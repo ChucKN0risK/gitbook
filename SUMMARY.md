@@ -11,3 +11,4 @@
 * [CLI](platform/cli.md)
 * [Token types](platform/token-types.md)
 * [Parsers](platform/parsers.md)
+* [REST API](platform/rest-api.md)

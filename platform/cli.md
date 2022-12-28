@@ -6,7 +6,7 @@ description: >-
 
 # CLI
 
-<figure><img src="../.gitbook/assets/CleanShot 2022-12-28 at 15.32.22@2x.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/cli.jpg" alt=""><figcaption></figcaption></figure>
 
 ### Introduction
 

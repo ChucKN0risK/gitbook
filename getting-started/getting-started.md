@@ -26,7 +26,7 @@ Install `@specifyapp/cli` via npm or Yarn.
 {% tabs %}
 {% tab title="NPM" %}
 ```bash
-npm install -D @specifyapp/cli
+npm install -g @specifyapp/cli
 ```
 {% endtab %}
 

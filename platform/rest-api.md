@@ -34,7 +34,7 @@ Specify provides the following endpoint to help you get design tokens and assets
 
 ### Parameters
 
-{% swagger method="post" path="" baseUrl="https://api.specifyapp.com/repository/{owner}/{name}/design-tokens" summary="" %}
+{% swagger method="post" path="" baseUrl="https://api.specifyapp.com/repository/{owner}/{name}/design-tokens" summary="" expanded="true" %}
 {% swagger-description %}
 Get design tokens and assets from a Specify repository.
 {% endswagger-description %}
@@ -69,3 +69,10 @@ Can contain an object or an array of objects. Each object corresponds to a speci
 .
 {% endswagger-parameter %}
 {% endswagger %}
+
+```bash
+curl -X POST 'https://api.specifyapp.com/repository/{owner}/{name}/design-tokens' \
+  -H 'Authorization: <your-personal-access-token>' \
+  -H 'Content-Type: application/json' \
+  -d '{}'
+```

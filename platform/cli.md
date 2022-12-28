@@ -19,3 +19,18 @@ You can use the Specify CLI to:
 * Sync a Specify repository
 
 ### Installation
+Install `@specifyapp/cli` via npm or Yarn.
+
+{% tabs %}
+{% tab title="NPM" %}
+```bash
+npm install -D @specifyapp/cli
+```
+{% endtab %}
+
+{% tab title="Yarn" %}
+```bash
+yarn global add @specifyapp/cli
+```
+{% endtab %}
+{% endtabs %}

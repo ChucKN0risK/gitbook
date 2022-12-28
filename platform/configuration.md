@@ -19,16 +19,16 @@ After reading this page, you will be able to setup a tailored transformation pip
 
 ## Examples
 
-The following examples are made to be used with the Specifuy CLI.
+### How to run these examples
+
+The following examples are made to be used with the Specify CLI.
 
 Requirements:
 
 * a Specify repository containing design tokens
-* a valid personal access token.
+* a valid personal access token ([Generate one↗](https://specifyapp.com/user/personal-access-tokens))
 
-{% hint style="info" %}
-Need a personal access token? [Generate one↗](https://specifyapp.com/user/personal-access-tokens)
-{% endhint %}
+All examples&#x20;
 
 ### Basic
 
@@ -36,6 +36,7 @@ Here's a basic configuration file that targets a Specify repository called `all-
 
 {% tabs %}
 {% tab title="JavaScript" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
 ```javascript
 module.exports = {
   repository: '@acme-inc/all-design-data',
@@ -49,9 +50,11 @@ module.exports = {
   ],
 };
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="JSON" %}
+{% code title=".specifyrc.json" lineNumbers="true" %}
 ```json
 {
   "repository": "@acme-inc/all-design-data",
@@ -65,6 +68,7 @@ module.exports = {
   ]
 }
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -80,6 +84,7 @@ Now let's update our previous configuration to only pull colors and transform th
 
 {% tabs %}
 {% tab title="JavaScript" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
 ```javascript
 module.exports = {
   repository: '@acme-inc/all-design-data',
@@ -105,9 +110,11 @@ module.exports = {
   ],
 };
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="JSON" %}
+{% code title=".specifyrc.json" lineNumbers="true" %}
 ```json
 {
   "repository": "@acme-inc/all-design-data",
@@ -133,5 +140,6 @@ module.exports = {
   ]
 }
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}

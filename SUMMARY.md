@@ -3,3 +3,4 @@
 ## Getting started
 
 * [Overview](README.md)
+* [Getting started](getting-started/getting-started.md)

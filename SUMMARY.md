@@ -9,3 +9,4 @@
 ## Platform
 
 * [CLI](platform/cli.md)
+* [Token types](platform/token-types.md)

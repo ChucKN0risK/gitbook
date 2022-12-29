@@ -59,7 +59,7 @@ We target it like this:
 {% endtabs %}
 
 {% hint style="info" %}
-You can only target one repository per configuration file. Want to pull design tokens from several Specify repositories? Create a several configuration file and run them with the Specify CLI.
+You can only target one repository per configuration file. Want to pull design tokens from several Specify repositories? Create a several configuration files and run them with the Specify CLI.
 {% endhint %}
 
 ### `personalAccessToken`

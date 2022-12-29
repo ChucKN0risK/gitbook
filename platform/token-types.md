@@ -10,7 +10,7 @@ Types define every type of design token and asset Specify is compatible with. Us
 
 In Specify, types are displayed as "categories" of design data you can create and find in your Specify repository.
 
-Specify is compatible with the following design tokens and assets under the [`TokenType`](token-types.md) type.
+Specify is compatible with the following design tokens and assets under the `TokenType` type.
 
 
 
@@ -23,7 +23,7 @@ A border is a line surrounding a UI element. According to your target platform c
 Borders are considered as [composite design tokens ↗](https://design-tokens.github.io/community-group/format/#composite-design-token) because they are composed of several design tokens.
 
 {% hint style="info" %}
-Looking for Border radius? You can add them as a [Measurement](token-types.md#measurement) type.
+Looking for border radius? You can add them as a [Measurement](token-types.md#measurement) type.
 {% endhint %}
 
 ```typescript

@@ -50,21 +50,21 @@ specify init
 Add your Specify `repository` from which you want to pull your design tokens and assets. [Learn more ↗️](https://specifyapp.com/developers/cli#heading-properties).
 
 {% tabs %}
-{% tab title="JSON" %}
-<pre class="language-json" data-line-numbers><code class="lang-json">{
-<strong>  "repository": "@owner/name",
-</strong>  "personalAccessToken": "&#x3C;your-personal-access-token>",
-  "rules": []
-}
-</code></pre>
-{% endtab %}
-
 {% tab title="JavaScript" %}
 <pre class="language-javascript" data-line-numbers><code class="lang-javascript">module.exports = {
 <strong>  repository: '@owner/name',
 </strong>  personalAccessToken: '&#x3C;your-personal-access-token>',
   rules: [],
 };
+</code></pre>
+{% endtab %}
+
+{% tab title="JSON" %}
+<pre class="language-json" data-line-numbers><code class="lang-json">{
+<strong>  "repository": "@owner/name",
+</strong>  "personalAccessToken": "&#x3C;your-personal-access-token>",
+  "rules": []
+}
 </code></pre>
 {% endtab %}
 {% endtabs %}

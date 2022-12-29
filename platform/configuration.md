@@ -40,7 +40,7 @@ We target it like this:
 
 {% tabs %}
 {% tab title="JavaScript" %}
-<pre class="language-javascript" data-title=".specifyfr.js" data-line-numbers><code class="lang-javascript">module.exports = {
+<pre class="language-javascript" data-title=".specifyrc.js" data-line-numbers><code class="lang-javascript">module.exports = {
 <strong>  repository: '@acme-inc/all-design-data',
 </strong>  personalAccessToken: '&#x3C;your-personal-access-token>',
   rules: [],
@@ -49,7 +49,7 @@ We target it like this:
 {% endtab %}
 
 {% tab title="JSON" %}
-<pre class="language-json" data-title=".specifyfr.json" data-line-numbers><code class="lang-json">{
+<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
 <strong>  "repository": "@acme-inc/all-design-data",
 </strong>  "personalAccessToken": "&#x3C;your-personal-access-token>",
   "rules": []

@@ -37,6 +37,7 @@ Let's say we have the following repository in Specify called "all-design-data" l
 <figure><img src="../.gitbook/assets/base-specify-repository.jpg" alt="An example Specify repository called &#x27;all-design-data&#x27; located in the &#x27;@acme-inc&#x27; organization."><figcaption><p>An example Specify repository called "all-design-data" located in the "@acme-inc" organization.</p></figcaption></figure>
 
 We target it like this:
+
 {% tabs %}
 {% tab title="JavaScript" %}
 <pre class="language-javascript" data-title=".specifyfr.js" data-line-numbers><code class="lang-javascript">module.exports = {
@@ -107,6 +108,14 @@ interface Rule {
   parsers?: Array<Parser>;
 };
 ```
+
+| Name      | Type                                                                                                                                          | Required                                  | Description                                                                                                                                                                                                                                                                                                                                                                                             |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`    | `string`                                                                                                                                      | <mark style="color:yellow;">`true`</mark> | The name of your rule.                                                                                                                                                                                                                                                                                                                                                                                  |
+| `path`    | `string`                                                                                                                                      | <mark style="color:yellow;">`true`</mark> | <p>The path in your project where you want Specify to generate your design data.</p><p></p><p>If you want to pull <a href="token-types.md#bitmap">bitmap</a>, <a href="token-types.md#vector">vector</a> or <a href="token-types.md#font">font</a> token types you must set a directory (<a href="https://github.com/Specifyapp/parsers/tree/master/parsers/convert-font#output">Learn more ↗</a>).</p> |
+| `filter`  | <pre class="language-typescript" data-overflow="wrap"><code class="lang-typescript">Record&#x3C;'types', Array&#x3C;TokenType>>
+</code></pre> | <mark style="color:red;">`false`</mark>   | The list of [Token type](token-types.md) you want your rule to target.                                                                                                                                                                                                                                                                                                                                  |
+| `parsers` | `Array<Parser>`                                                                                                                               | <mark style="color:red;">`false`</mark>   | The parsers you want to apply to transform your [Token types](token-types.md). For further details see [Parsers](https://specifyapp.com/developers/configuration#heading-parsers).                                                                                                                                                                                                                      |
 
 ## Examples
 

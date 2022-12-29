@@ -4,6 +4,32 @@ description: "Types define every type of design token and asset Specify is compa
 
 # Token types
 
+## Introduction
+
+Types define every type of design token and asset Specify is compatible with. Use them to target specific types of design tokens and assets you want to pull from Specify.
+
+In Specify, types are displayed as "categories" of design data you can create and find in your Specify repository.
+
+Specify is compatible with the following design tokens and assets under the `TokenType` type.
+
+### Design tokens
+
+* [Border](token-types.md#border)
+* [Color](token-types.md#color)
+* [Depth](token-types.md#depth)
+* [Duration](token-types.md#duration)
+* [Gradient](token-types.md#gradient)
+* [Measurement](token-types.md#measurement)
+* [Opacity](token-types.md#opacity)
+* [Shadow](token-types.md#shadow)
+* [Text Style](token-types.md#text-style)
+
+### Assets
+
+* [Bitmap](token-types.md#bitmap)
+* [Font](token-types.md#font)
+* [Vector](token-types.md#vector)
+
 ## Border
 
 A border is a line surrounding a UI element. According to your target platform capabilities, you can define the border to go inside (inner border), outside (outer border), or between them (center).

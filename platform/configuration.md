@@ -98,28 +98,47 @@ You can have as many rules as you want and you can have rules that transform sev
 
 A rule is composed of the following properties:
 
-```typescript
-interface Rule {
+<pre class="language-typescript"><code class="lang-typescript">interface Rule {
   name: string;
   path: string;
   filter?: {
-    types: Array<TokenType>
+    types: Array&#x3C;<a data-footnote-ref href="#user-content-fn-1">TokenType</a>>
   };
-  parsers?: Array<Parser>;
+  parsers?: Array&#x3C;Parser>;
 };
+</code></pre>
+
+| Name      | Type                                                                                                                                                                                             | Required                                  | Description                                                                                                                                                                                                                                                                                                                                                                                      |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `name`    | `string`                                                                                                                                                                                         | <mark style="color:yellow;">`true`</mark> | The name of your rule.                                                                                                                                                                                                                                                                                                                                                                           |
+| `path`    | `string`                                                                                                                                                                                         | <mark style="color:yellow;">`true`</mark> | <p>The path in your project where you want Specify to generate your design data.</p><p>If you want to pull <a href="token-types.md#bitmap">bitmap</a>, <a href="token-types.md#vector">vector</a> or <a href="token-types.md#font">font</a> token types you must set a directory (<a href="https://github.com/Specifyapp/parsers/tree/master/parsers/convert-font#output">Learn more ↗</a>).</p> |
+| `filter`  | <pre class="language-typescript" data-overflow="wrap"><code class="lang-typescript">Record&#x3C;'types', Array&#x3C;<a data-footnote-ref href="#user-content-fn-2">TokenType</a>>>
+</code></pre> | <mark style="color:red;">`false`</mark>   | The list of [Token type](token-types.md) you want your rule to target.                                                                                                                                                                                                                                                                                                                           |
+| `parsers` | `Array<Parser>`                                                                                                                                                                                  | <mark style="color:red;">`false`</mark>   | The parsers you want to apply to transform your [Token types](token-types.md). For further details see [Parsers](https://specifyapp.com/developers/configuration#heading-parsers).                                                                                                                                                                                                               |
+
+#### Parsers
+
+Parsers are functions allowing you to transform design tokens and assets coming from Specify to fit your needs and company standards.
+
+Inside a configuration, a parser has the following properties:
+
+```typescript
+interface Parser {
+  name: string;
+  options?: Record<string, any>;
+}
 ```
 
-| Name      | Type                                                                                                                                          | Required                                  | Description                                                                                                                                                                                                                                                                                                                                                                                             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`    | `string`                                                                                                                                      | <mark style="color:yellow;">`true`</mark> | The name of your rule.                                                                                                                                                                                                                                                                                                                                                                                  |
-| `path`    | `string`                                                                                                                                      | <mark style="color:yellow;">`true`</mark> | <p>The path in your project where you want Specify to generate your design data.</p><p></p><p>If you want to pull <a href="token-types.md#bitmap">bitmap</a>, <a href="token-types.md#vector">vector</a> or <a href="token-types.md#font">font</a> token types you must set a directory (<a href="https://github.com/Specifyapp/parsers/tree/master/parsers/convert-font#output">Learn more ↗</a>).</p> |
-| `filter`  | <pre class="language-typescript" data-overflow="wrap"><code class="lang-typescript">Record&#x3C;'types', Array&#x3C;TokenType>>
-</code></pre> | <mark style="color:red;">`false`</mark>   | The list of [Token type](token-types.md) you want your rule to target.                                                                                                                                                                                                                                                                                                                                  |
-| `parsers` | `Array<Parser>`                                                                                                                               | <mark style="color:red;">`false`</mark>   | The parsers you want to apply to transform your [Token types](token-types.md). For further details see [Parsers](https://specifyapp.com/developers/configuration#heading-parsers).                                                                                                                                                                                                                      |
+| Name | Required |   |
+| ---- | -------- | - |
+|      |          |   |
+|      |          |   |
+|      |          |   |
 
 #### Example
 
 Here's a rule named "Design Tokens" that:
+
 1. targets `color` and `measurement` design tokens
 2. sorts them alphabetically by their `name`
 3. transforms them as CSS Custom Properties
@@ -366,3 +385,7 @@ Here is the input returned by Specify and the output generated by Specify after 
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
+[^1]: 
+
+[^2]: 

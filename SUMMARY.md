@@ -13,3 +13,4 @@
 * [Parsers](platform/parsers.md)
 * [REST API](platform/rest-api.md)
 * [Configuration](platform/configuration.md)
+* [Templates](platform/templates.md)

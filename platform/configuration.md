@@ -120,12 +120,66 @@ interface Rule {
 #### Example
 
 Here's a rule named "Design Tokens" that:
+1. targets `color` and `measurement` design tokens
+2. sorts them alphabetically by their `name`
+3. transforms them as CSS Custom Properties
+4. writes them in a `design-tokens.css` file inside a `styles` folder
 
-1. targets color and measurement design tokens
-2. transforms them as CSS Custom Properties
-3. writes them in a `design-tokens.css` file
+{% tabs %}
+{% tab title="JavaScript" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```javascript
+[
+  {
+    name: 'Design Tokens',
+    path: 'styles/design-tokens.css',
+    filter: {
+      types: ['color', 'measurement']
+    },
+    parsers: [
+      {
+        name: 'sort-by',
+        options: {
+          keys: ['name']
+        }
+      },
+      {
+        name: 'to-css-custom-properties'
+      }
+    ]
+  },
+]
+```
+{% endcode %}
+{% endtab %}
 
-
+{% tab title="JSON" %}
+{% code title=".specifyrc.json" lineNumbers="true" %}
+```json
+[
+  {
+    "name": "Design Tokens",
+    "path": "styles/design-tokens.css",
+    "filter": {
+      "types": ["color", "measurement"]
+    },
+    "parsers": [
+      {
+        "name": "sort-by",
+        "options": {
+          "keys": ["name"]
+        }
+      },
+      {
+        "name": "to-css-custom-properties"
+      }
+    ]
+  }
+]
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
 
 ## Examples
 

@@ -103,8 +103,8 @@ module.exports = {
             formatTokens: {
               color: 'hsl'
             },
-          }
-        }
+          },
+        },
       ],
     },
   ],

@@ -10,7 +10,7 @@ Types define every type of design token and asset Specify is compatible with. Us
 
 In Specify, types are displayed as "categories" of design data you can create and find in your Specify repository.
 
-Specify is compatible with the following design tokens and assets under the `TokenType` type.
+Specify is compatible with the following design tokens and assets under the [`TokenType`](token-types.md) type.
 
 
 

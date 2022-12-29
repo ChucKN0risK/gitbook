@@ -32,12 +32,11 @@ A configuration is composed of 3 main properties:
 
 The name of the Specify repository you want to pull your design tokens and assets from.
 
-Let's say we have the following repository in Specify called \`
-
-We target it like this:
+Let's say we have the following repository in Specify called "all-design-data" located in the "@acme-inc" organization.
 
 <figure><img src="../.gitbook/assets/base-specify-repository.jpg" alt="An example Specify repository called &#x27;all-design-data&#x27; located in the &#x27;@acme-inc&#x27; organization."><figcaption><p>An example Specify repository called "all-design-data" located in the "@acme-inc" organization.</p></figcaption></figure>
 
+We target it like this:
 {% tabs %}
 {% tab title="JavaScript" %}
 <pre class="language-javascript" data-title=".specifyfr.js" data-line-numbers><code class="lang-javascript">module.exports = {

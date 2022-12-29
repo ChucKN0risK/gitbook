@@ -12,6 +12,8 @@ In Specify, types are displayed as "categories" of design data you can create an
 
 Specify is compatible with the following design tokens and assets under the `TokenType` type.
 
+
+
 ## Design tokens
 
 ### Border
@@ -47,10 +49,7 @@ interface BorderValue {
   radii?: MeasurementValue;
   rectangleCornerRadii?: Array<MeasurementValue>;
   dashes?: Array<MeasurementValue>;
-}
 ```
-
-
 
 ### Color
 

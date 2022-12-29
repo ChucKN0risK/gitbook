@@ -117,6 +117,16 @@ interface Rule {
 </code></pre> | <mark style="color:red;">`false`</mark>   | The list of [Token type](token-types.md) you want your rule to target.                                                                                                                                                                                                                                                                                                                                  |
 | `parsers` | `Array<Parser>`                                                                                                                               | <mark style="color:red;">`false`</mark>   | The parsers you want to apply to transform your [Token types](token-types.md). For further details see [Parsers](https://specifyapp.com/developers/configuration#heading-parsers).                                                                                                                                                                                                                      |
 
+#### Example
+
+Here's a rule named "Design Tokens" that:
+
+1. targets color and measurement design tokens
+2. transforms them as CSS Custom Properties
+3. writes them in a `design-tokens.css` file
+
+
+
 ## Examples
 
 ### How to run these examples

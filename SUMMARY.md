@@ -14,3 +14,4 @@
 * [REST API](platform/rest-api.md)
 * [Configuration](platform/configuration.md)
 * [Templates](platform/templates.md)
+* [Page 1](platform/page-1.md)

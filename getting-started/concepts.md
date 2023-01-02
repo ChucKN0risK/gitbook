@@ -6,6 +6,8 @@ description: >-
 
 # Concepts
 
+<figure><img src="../.gitbook/assets/concepts-cover.jpg" alt=""><figcaption></figcaption></figure>
+
 ### Design API
 
 A Design API is an API designed to help you synchronize information within your design system such as design tokens, assets, components and even documentation.

@@ -17,7 +17,7 @@ Please make sure you have:
 * A Specify repository containing some design tokens and/or assets
 
 {% hint style="info" %}
-Want to connect a GitHub repository from your GitHub organization? Please make sure you have the correct access rights. Otherwise, you'll need for an owner top approve your installation request.
+Want to connect a GitHub repository from your GitHub organization? Please make sure you have the correct access rights. Otherwise, you'll need for an owner to approve your installation request.
 {% endhint %}
 
 ## Installation

@@ -46,3 +46,9 @@ Once you've connected your GitHub account, Specify has to know what design token
 ## Fixing sync issues
 
 Have trouble getting Pull Requests in your GitHub repository? Learn more about [how to fix most common issues](https://help.specifyapp.com/en/articles/4722450-how-to-use-github-as-a-destination).
+
+## Useful resources
+
+* [How to pull design tokens from several Specify repositories in GitHub](https://specifyapp.com/blog/how-to-pull-design-tokens-from-several-specify-repositories-on-github)
+* [How to run Style Dictionary with a GitHub Action](https://specifyapp.com/blog/github-actions-style-dictionary)
+

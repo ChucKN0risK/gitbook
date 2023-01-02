@@ -45,4 +45,4 @@ Once you've connected your GitHub account, Specify has to know what design token
 
 ## Fixing sync issues
 
-Have trouble getting Pull Requests in your GitHub repository? Learn more about how to fix most common issues.
+Have trouble getting Pull Requests in your GitHub repository? Learn more about [how to fix most common issues](https://help.specifyapp.com/en/articles/4722450-how-to-use-github-as-a-destination).

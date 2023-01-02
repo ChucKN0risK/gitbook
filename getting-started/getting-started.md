@@ -1,6 +1,6 @@
 ---
 description: >-
-  A short guide on collecting and pulling your first design tokens and assets
+  A 5min guide on collecting and pulling your first design tokens and assets
   with Specify.
 ---
 

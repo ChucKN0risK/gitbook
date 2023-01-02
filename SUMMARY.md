@@ -14,6 +14,7 @@
 * [Templates](platform/templates.md)
 * [CLI](platform/cli.md)
 * [GitHub](platform/github.md)
+* [Gitlab](https://specifyapp.com/blog/specify-to-gitlab)
 * [REST API](platform/rest-api.md)
 
 ## Useful links

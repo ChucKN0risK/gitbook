@@ -14,3 +14,12 @@
 * [REST API](platform/rest-api.md)
 * [Configuration](platform/configuration.md)
 * [Templates](platform/templates.md)
+* [GitHub](platform/github.md)
+
+## Useful links
+
+* [Discord](https://discord.com/invite/vMkDk4CbG4)
+* [YouTube](https://www.youtube.com/@specify7350)
+* [Twitter](https://twitter.com/specifyapp)
+* [Guide](https://specifyapp.com/guides)
+* [Help Center](https://help.specifyapp.com)

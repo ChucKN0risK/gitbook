@@ -42,3 +42,7 @@ Once you've connected your GitHub account, Specify has to know what design token
 8. Create the Pull Request containing your configuration file
 9. Merge the PR created by Specify containing your configuration file
 10. Specify will now automatically sync design data to your GitHub repository 🎉
+
+## Fixing sync issues
+
+Have trouble getting Pull Requests in your GitHub repository? Learn more about how to fix most common issues.

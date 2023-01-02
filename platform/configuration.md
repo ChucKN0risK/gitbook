@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-By default, without any [parsers](parsers.md), Specify will return your design data as raw data:
+By default, without any [parsers](parsers.md), Specify returns your design data as raw data:
 
 * Design tokens are returned in JSON
 * Assets are returned as files

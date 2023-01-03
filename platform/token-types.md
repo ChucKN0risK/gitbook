@@ -52,29 +52,6 @@ interface BorderValue {
 }
 ```
 
-<details>
-
-<summary>See how to sync border</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / Borders",
-      "path": "borders.json",
-      "filter": {
-        "types": [
-          "border"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
-
 ### Color
 
 Colors have meaning and support the purpose of the content, communicating things like hierarchy of information, interactive states, and the difference between distinct elements in your UI. Among all your design token types, color is surely one of the most important ones.
@@ -88,29 +65,6 @@ interface ColorValue {
 }
 ```
 
-<details>
-
-<summary>See how to sync color</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / Colors",
-      "path": "colors.json",
-      "filter": {
-        "types": [
-          "color"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
-
 ### Depth
 
 The Depth token type sets a UI element's position on the z-axis. More commonly called z-index on [Web ↗](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) and zIndex on [Android ↗](https://developer.android.com/reference/kotlin/androidx/compose/ui/package-summary#\(androidx.compose.ui.Modifier\).zIndex\(kotlin.Float\)) and [iOS ↗](https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617768-zindex).
@@ -120,29 +74,6 @@ interface DepthValue {
   depth: number;
 }
 ```
-
-<details>
-
-<summary>See how to sync depth</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / z-index",
-      "path": "zIndex.json",
-      "filter": {
-        "types": [
-          "depth"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
 
 ### Duration
 
@@ -154,29 +85,6 @@ interface DurationValue {
   unit: string;
 }
 ```
-
-<details>
-
-<summary>See how to sync duration</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / Durations",
-      "path": "durations.json",
-      "filter": {
-        "types": [
-          "duration"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
 
 ### Gradient
 
@@ -203,29 +111,6 @@ interface GradientValue {
 }
 ```
 
-<details>
-
-<summary>See how to sync gradient</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / Gradients",
-      "path": "gradients.json",
-      "filter": {
-        "types": [
-          "gradient"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
-
 ### Measurement
 
 Measurement or [Dimension ↗](https://design-tokens.github.io/community-group/format/#dimension) design tokens help you define size values.
@@ -247,29 +132,6 @@ interface MeasurementValue {
 }
 ```
 
-<details>
-
-<summary>See how to sync measurement</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / Measurements",
-      "path": "measurements.json",
-      "filter": {
-        "types": [
-          "measurement"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
-
 ### Opacity
 
 Opacity design tokens help you set the opacity of UI elements.
@@ -279,29 +141,6 @@ interface OpacityValue {
   opacity: number;
 }
 ```
-
-<details>
-
-<summary>See how to sync opacity</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / Opacities",
-      "path": "opacities.json",
-      "filter": {
-        "types": [
-          "opacity"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
 
 ### Shadow
 
@@ -329,29 +168,6 @@ type ShadowValue = Array<{
   isInner: boolean;
 }>;
 ```
-
-<details>
-
-<summary>See how to sync shadow</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / Shadows",
-      "path": "shadows.json",
-      "filter": {
-        "types": [
-          "shadow"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
 
 ### Text Style
 
@@ -432,29 +248,6 @@ export interface TextStyleValue {
 }
 ```
 
-<details>
-
-<summary>See how to sync textStyle</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / Text Styles",
-      "path": "textStyles.json",
-      "filter": {
-        "types": [
-          "textStyle"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
-
 ## Assets
 
 ### Bitmap
@@ -468,29 +261,6 @@ interface BitmapValue {
   format?: string;
 }
 ```
-
-<details>
-
-<summary>See how to sync bitmap</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / Images",
-      "path": "bitmaps.json",
-      "filter": {
-        "types": [
-          "bitmap"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
 
 ### Font
 
@@ -515,29 +285,6 @@ export interface FontValue {
 }
 ```
 
-<details>
-
-<summary>See how to sync font</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
-  "rules": [
-    {
-      "name": "Design Tokens / Fonts",
-      "path": "fonts.json",
-      "filter": {
-        "types": [
-          "font"
-        ]
-      }
-    }
-  ]
-}
-</code></pre>
-
-</details>
-
 ### Vector
 
 By "vectors" we mean vector images (e.g., SVG and PDF files). You can use them for 2 main purposes: iconography and illustration. In the following section we will only focus on icons.
@@ -551,26 +298,52 @@ interface VectorValue {
 }
 ```
 
-<details>
+### Example
 
-<summary>See how to sync vector</summary>
-
-<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
+{% tabs %}
+{% tab title="Border" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
   "repository": "@owner/name",
   "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
   "rules": [
     {
-      "name": "Design Tokens / Icons",
-      "path": "vectors.json",
+      "name": "Design Tokens / Borders",
+      "path": "borders.json",
       "filter": {
         "types": [
-          "vector"
+          "border"
         ]
       }
     }
   ]
 }
-</code></pre>
+```
+{% endcode %}
+{% endtab %}
 
-</details>
+{% tab title="color" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
+    {
+      "name": "Design Tokens / Colors",
+      "path": "colors.json",
+      "filter": {
+        "types": [
+          "color"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+
+{% endtabs %}
 

@@ -24,7 +24,7 @@ Want to connect a GitHub repository from your GitHub organization? Please make s
 
 1. Go to the applications catalog [on the Destinations page](https://specifyapp.com/apps/add/destinations)
 2. Select GitHub
-3. Click on "Connect"
+3. Click on "Connect[^1]"
 4. Select the repositories you want Specify to have access to
 5. You will now be able to connect your Specify and your GitHub repositories together 🎉
 
@@ -52,3 +52,6 @@ Have trouble getting Pull Requests in your GitHub repository? Learn more about [
 * [How to pull design tokens from several Specify repositories in GitHub](https://specifyapp.com/blog/how-to-pull-design-tokens-from-several-specify-repositories-on-github)
 * [How to run Style Dictionary with a GitHub Action](https://specifyapp.com/blog/github-actions-style-dictionary)
 
+
+
+[^1]: ccsd

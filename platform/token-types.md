@@ -56,11 +56,9 @@ interface BorderValue {
 
 <summary>See how to sync border</summary>
 
-{% code title=".specifyrc.json" lineNumbers="true" %}
-```json
-{
-  "repository": "@owner/name",
-  "personalAccessToken": "<your-personal-access-token>",
+<pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
+  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token>",
   "rules": [
     {
       "name": "Design Tokens / Borders",
@@ -73,14 +71,13 @@ interface BorderValue {
     }
   ]
 }
-```
-{% endcode %}
+</code></pre>
 
 </details>
 
 ### Color
 
-Colors have meaning and support the purpose of the content, communicating things like hierarchy of information, interactive states, and the difference between distinct elements in your UI. Among all your design token types, color is surely one of the most important ones.
+Colors have meaning[^2] and support the purpose of the content, communicating things like hierarchy of information, interactive states, and the difference between distinct elements in your UI. Among all your design token types, color is surely one of the most important ones.
 
 ```typescript
 interface ColorValue {
@@ -323,3 +320,7 @@ interface VectorValue {
   format: 'svg' | 'pdf';
 }
 ```
+
+[^1]: 
+
+[^2]: 

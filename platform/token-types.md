@@ -54,9 +54,25 @@ interface BorderValue {
 
 <details>
 
-<summary>Try it</summary>
+<summary>See how to sync border</summary>
 
-
+```
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / Borders",
+      "path": "borders.json",
+      "filter": {
+        "types": [
+          "border"
+        ]
+      }
+    }
+  ]
+}
+```
 
 </details>
 

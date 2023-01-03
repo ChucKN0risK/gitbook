@@ -1,7 +1,7 @@
 ---
 description: >-
   Learn more about how to configure Specify to generate design tokens and assets
-  respecting your company standards.
+  fitting your company standards.
 ---
 
 # Configuration

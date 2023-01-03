@@ -57,9 +57,9 @@ interface BorderValue {
 <summary>See how to sync border</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Borders",
       "path": "borders.json",
@@ -93,9 +93,9 @@ interface ColorValue {
 <summary>See how to sync color</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Colors",
       "path": "colors.json",
@@ -126,9 +126,9 @@ interface DepthValue {
 <summary>See how to sync depth</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / z-index",
       "path": "zIndex.json",
@@ -160,9 +160,9 @@ interface DurationValue {
 <summary>See how to sync duration</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Durations",
       "path": "durations.json",
@@ -208,9 +208,9 @@ interface GradientValue {
 <summary>See how to sync gradient</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Gradients",
       "path": "gradients.json",
@@ -252,9 +252,9 @@ interface MeasurementValue {
 <summary>See how to sync measurement</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Measurements",
       "path": "measurements.json",
@@ -285,9 +285,9 @@ interface OpacityValue {
 <summary>See how to sync opacity</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Opacities",
       "path": "opacities.json",
@@ -335,9 +335,9 @@ type ShadowValue = Array<{
 <summary>See how to sync shadow</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Shadows",
       "path": "shadows.json",
@@ -437,9 +437,9 @@ export interface TextStyleValue {
 <summary>See how to sync textStyle</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Text Styles",
       "path": "textStyles.json",
@@ -474,9 +474,9 @@ interface BitmapValue {
 <summary>See how to sync bitmap</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Images",
       "path": "bitmaps.json",
@@ -520,9 +520,9 @@ export interface FontValue {
 <summary>See how to sync font</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Fonts",
       "path": "fonts.json",
@@ -556,9 +556,9 @@ interface VectorValue {
 <summary>See how to sync vector</summary>
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
-  "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
-  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
+  "repository": "@owner/name",
+  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "rules": [
     {
       "name": "Design Tokens / Icons",
       "path": "vectors.json",
@@ -574,8 +574,3 @@ interface VectorValue {
 
 </details>
 
-[^1]: The name of the Specify repository you want to pull your design tokens and assets from. [Learn more](https://app.gitbook.com/s/-M4yPXmYPKh6TnFPyWko/~/changes/nuixeeKyZqSY6uaK2UQH/platform/configuration#repository).
-
-[^2]: The Specify `personalAccessToken` used to authenticate your actions. [Learn more](https://app.gitbook.com/s/-M4yPXmYPKh6TnFPyWko/~/changes/nuixeeKyZqSY6uaK2UQH/platform/configuration#personalaccesstoken).
-
-[^3]: Rules help you transform your design tokens and assets the way you want. [Learn more](https://app.gitbook.com/s/-M4yPXmYPKh6TnFPyWko/~/changes/nuixeeKyZqSY6uaK2UQH/platform/configuration#rules).

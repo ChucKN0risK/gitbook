@@ -321,4 +321,4 @@ interface VectorValue {
 }
 ```
 
-[^1]: https://app.gitbook.com/s/-M4yPXmYPKh6TnFPyWko/~/changes/nuixeeKyZqSY6uaK2UQH/platform/configuration#repository
+[^1]: The name of the Specify repository you want to pull your design tokens and assets from. [Learn more](https://app.gitbook.com/s/-M4yPXmYPKh6TnFPyWko/~/changes/nuixeeKyZqSY6uaK2UQH/platform/configuration#repository).

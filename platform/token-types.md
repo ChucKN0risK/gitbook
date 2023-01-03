@@ -77,7 +77,7 @@ interface BorderValue {
 
 ### Color
 
-Colors have meaning[^2] and support the purpose of the content, communicating things like hierarchy of information, interactive states, and the difference between distinct elements in your UI. Among all your design token types, color is surely one of the most important ones.
+Colors have meaning and support the purpose of the content, communicating things like hierarchy of information, interactive states, and the difference between distinct elements in your UI. Among all your design token types, color is surely one of the most important ones.
 
 ```typescript
 interface ColorValue {
@@ -321,6 +321,4 @@ interface VectorValue {
 }
 ```
 
-[^1]: 
-
-[^2]: 
+[^1]: https://app.gitbook.com/s/-M4yPXmYPKh6TnFPyWko/~/changes/nuixeeKyZqSY6uaK2UQH/platform/configuration#repository

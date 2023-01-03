@@ -58,8 +58,8 @@ interface BorderValue {
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
   "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token>",
-  "rules": [
+  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token>",
+  "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
     {
       "name": "Design Tokens / Borders",
       "path": "borders.json",
@@ -322,3 +322,7 @@ interface VectorValue {
 ```
 
 [^1]: The name of the Specify repository you want to pull your design tokens and assets from. [Learn more](https://app.gitbook.com/s/-M4yPXmYPKh6TnFPyWko/~/changes/nuixeeKyZqSY6uaK2UQH/platform/configuration#repository).
+
+[^2]: The Specify `personalAccessToken` used to authenticate your actions. [Learn more](https://app.gitbook.com/s/-M4yPXmYPKh6TnFPyWko/~/changes/nuixeeKyZqSY6uaK2UQH/platform/configuration#personalaccesstoken).
+
+[^3]: Rules help you transform your design tokens and assets the way you want. [Learn more](https://app.gitbook.com/s/-M4yPXmYPKh6TnFPyWko/~/changes/nuixeeKyZqSY6uaK2UQH/platform/configuration#rules).

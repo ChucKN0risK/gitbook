@@ -248,11 +248,214 @@ export interface TextStyleValue {
 }
 ```
 
+### Example
+{% tabs %}
+{% tab title="border" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / Borders",
+      "path": "borders.json",
+      "filter": {
+        "types": [
+          "border"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="color" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / Colors",
+      "path": "colors.json",
+      "filter": {
+        "types": [
+          "color"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="depth" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / zIndex",
+      "path": "zIndex.json",
+      "filter": {
+        "types": [
+          "depth"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="duration" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / durations",
+      "path": "durations.json",
+      "filter": {
+        "types": [
+          "duration"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="gradient" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / Gradients",
+      "path": "gradients.json",
+      "filter": {
+        "types": [
+          "gradient"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="measurement" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / Measurements",
+      "path": "measurements.json",
+      "filter": {
+        "types": [
+          "measurement"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="opacity" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / Opacities",
+      "path": "opacities.json",
+      "filter": {
+        "types": [
+          "opacity"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="shadow" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / Shadows",
+      "path": "shadows.json",
+      "filter": {
+        "types": [
+          "shadow"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="textStyle" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / Text Styles",
+      "path": "textStyles.json",
+      "filter": {
+        "types": [
+          "textStyle"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
+
+
+
 ## Assets
 
 ### Bitmap
 
-Bitmaps are raster images you can use in many contexts. They're basically any image you can display in a UI that is a .png, .jpeg, .webp, .avif...
+Bitmaps are raster images you can use in many contexts. They are basically any image you can display in a UI that is a `.png`, `.jpeg`, `.webp`, `.avif`...
 
 ```typescript
 interface BitmapValue {
@@ -301,19 +504,19 @@ interface VectorValue {
 ### Example
 
 {% tabs %}
-{% tab title="Border" %}
+{% tab title="bitmap" %}
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
   "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
-      "name": "Design Tokens / Borders",
-      "path": "borders.json",
+      "name": "Design Tokens / Images",
+      "path": "bitmaps.json",
       "filter": {
         "types": [
-          "border"
+          "bitmap"
         ]
       }
     }
@@ -323,19 +526,41 @@ interface VectorValue {
 {% endcode %}
 {% endtab %}
 
-{% tab title="color" %}
+{% tab title="font" %}
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
   "repository": "@owner/name",
-  "personalAccessToken": "&#x3C;your-personal-access-token&#x3E;",
+  "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
-      "name": "Design Tokens / Colors",
-      "path": "colors.json",
+      "name": "Design Tokens / Fonts",
+      "path": "fonts.json",
       "filter": {
         "types": [
-          "color"
+          "font"
+        ]
+      }
+    }
+  ]
+}
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="vector" %}
+{% code title=".specifyrc.js" lineNumbers="true" %}
+```json
+{
+  "repository": "@owner/name",
+  "personalAccessToken": "<your-personal-access-token>",
+  "rules": [
+    {
+      "name": "Design Tokens / Icons",
+      "path": "vectors.json",
+      "filter": {
+        "types": [
+          "vector"
         ]
       }
     }

@@ -56,7 +56,8 @@ interface BorderValue {
 
 <summary>See how to sync border</summary>
 
-```
+{% code title=".specifyrc.json" lineNumbers="true" %}
+```json
 {
   "repository": "@owner/name",
   "personalAccessToken": "<your-personal-access-token>",
@@ -73,6 +74,7 @@ interface BorderValue {
   ]
 }
 ```
+{% endcode %}
 
 </details>
 

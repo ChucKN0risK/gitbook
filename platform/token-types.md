@@ -58,7 +58,7 @@ interface BorderValue {
 
 <pre class="language-json" data-title=".specifyrc.json" data-line-numbers><code class="lang-json">{
   "<a data-footnote-ref href="#user-content-fn-1">repository</a>": "@owner/name",
-  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token>",
+  "<a data-footnote-ref href="#user-content-fn-2">personalAccessToken</a>": "&#x3C;your-personal-access-token&#x3E;",
   "<a data-footnote-ref href="#user-content-fn-3">rules</a>": [
     {
       "name": "Design Tokens / Borders",

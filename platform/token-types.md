@@ -52,6 +52,14 @@ interface BorderValue {
 }
 ```
 
+<details>
+
+<summary>Try it</summary>
+
+
+
+</details>
+
 ### Color
 
 Colors have meaning and support the purpose of the content, communicating things like hierarchy of information, interactive states, and the difference between distinct elements in your UI. Among all your design token types, color is surely one of the most important ones.

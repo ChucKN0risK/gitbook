@@ -49,6 +49,7 @@ interface BorderValue {
   radii?: MeasurementValue;
   rectangleCornerRadii?: Array<MeasurementValue>;
   dashes?: Array<MeasurementValue>;
+}
 ```
 
 ### Color
@@ -84,8 +85,6 @@ interface DurationValue {
   unit: string;
 }
 ```
-
-
 
 ### Gradient
 

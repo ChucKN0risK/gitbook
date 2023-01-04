@@ -19,6 +19,8 @@
 
 * [GitHub](apps/github.md)
 * [Gitlab](https://specifyapp.com/blog/specify-to-gitlab)
+* [Notion](apps/notion.md)
+* [Raycast](apps/raycast.md)
 
 ## Useful links
 

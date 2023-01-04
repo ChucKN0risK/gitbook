@@ -6,16 +6,19 @@
 * [Concepts](getting-started/concepts.md)
 * [Getting started](getting-started/getting-started.md)
 
-## Platform
+## Usage
 
-* [Token types](platform/token-types.md)
-* [Configuration](platform/configuration.md)
-* [Parsers](platform/parsers.md)
-* [Templates](platform/templates.md)
-* [CLI](platform/cli.md)
-* [GitHub](platform/github.md)
+* [Token types](usage/token-types.md)
+* [Configuration](usage/configuration.md)
+* [Parsers](usage/parsers.md)
+* [Templates](usage/templates.md)
+* [CLI](usage/cli.md)
+* [REST API](usage/rest-api.md)
+
+## Apps
+
+* [GitHub](apps/github.md)
 * [Gitlab](https://specifyapp.com/blog/specify-to-gitlab)
-* [REST API](platform/rest-api.md)
 
 ## Useful links
 

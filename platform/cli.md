@@ -48,7 +48,7 @@ specify sync [flags]
 
 ### Init
 
-Initialize a Specify configuration tailored for a specific output format. See all configuration templates.
+Initialize a Specify configuration tailored for a specific output format. [See all configuration templates](templates.md).
 
 ```bash
 specify init

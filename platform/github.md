@@ -37,7 +37,7 @@ Once you've connected your GitHub account, Specify has to know what design token
 3. Click on "Create Pipeline"
 4. Select "GitHub application"
 5. Select your GitHub account
-6. Select the GitHub repository you want to distribute design data to
+6. Select the GitHub repository you want to distribute your design data to
 7. Select your configuration template ([Learn more](templates.md))
 8. Create the Pull Request containing your configuration file
 9. Merge the PR created by Specify containing your configuration file

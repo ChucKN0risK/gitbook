@@ -2,7 +2,8 @@
 
 ## Getting started
 
-* [Overview](README.md)
+* [What is Specify](README.md)
+* [Overview](<README (1).md>)
 * [Concepts](getting-started/concepts.md)
 * [Getting started](getting-started/getting-started.md)
 

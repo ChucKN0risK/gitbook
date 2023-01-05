@@ -10,9 +10,14 @@ Our Raycast extension helps you search your design tokens and assets and use the
 
 Please make sure you have:
 
-* Raycast installed
+* [Raycast](https://raycast.so/) installed
 * A Specify account
 * A Specify repository containing some design tokens and/or assets
+* Generated a Personal Access Token for Raycast
+
+{% hint style="info" %}
+Need a personal access token? [Generate one ↗](https://specifyapp.com/user/personal-access-tokens)
+{% endhint %}
 
 ## Supported Token types
 

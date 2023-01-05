@@ -4,6 +4,20 @@ description: Learn how Specify and Raycast work together
 
 # Raycast
 
+<div>
+
+<figure><img src="../.gitbook/assets/raycast-extension-vectors.jpg" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../.gitbook/assets/raycast-extension-colors.jpg" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../.gitbook/assets/raycast-extension-bitmaps.jpg" alt=""><figcaption></figcaption></figure>
+
+</div>
+
 Our Raycast extension helps you search your design tokens and assets and use them in your favorite tools: Notion pages, Pitch presentations, Slack discussions, etc.
 
 ## Prerequisites
@@ -26,3 +40,10 @@ You can sync the following [Token types](../usage/token-types.md) in Raycast:
 * color
 * bitmap
 * vector
+
+## Installation
+
+1. Install the Specify Raycast extension from the Raycast store
+2. Set your newly created Personal Access Token in Raycast
+
+<figure><img src="../.gitbook/assets/raycast-extension-login.jpg" alt=""><figcaption></figcaption></figure>

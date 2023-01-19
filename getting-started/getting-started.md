@@ -47,12 +47,12 @@ specify init
 
 ### 3. Add your Specify repository
 
-Add your Specify `repository` from which you want to pull your design tokens and assets. [Learn more ↗️](https://specifyapp.com/developers/cli#heading-properties).
+Add your Specify `repository` from which you want to pull your design tokens and assets. [Learn more ↗️](https://specify.gitbook.io/specify-documentation/usage/cli#commands).
 
 {% tabs %}
-{% tab title="JavaScript" %}
+{% tab title="JavaScript (CommonJS)" %}
 <pre class="language-javascript" data-line-numbers><code class="lang-javascript">module.exports = {
-<strong>  repository: '@owner/name',
+<strong>  repository: '@workspace/repository',
 </strong>  personalAccessToken: '&#x3C;your-personal-access-token>',
   rules: [],
 };
@@ -61,7 +61,7 @@ Add your Specify `repository` from which you want to pull your design tokens and
 
 {% tab title="JSON" %}
 <pre class="language-json" data-line-numbers><code class="lang-json">{
-<strong>  "repository": "@owner/name",
+<strong>  "repository": "@workspace/repository",
 </strong>  "personalAccessToken": "&#x3C;your-personal-access-token>",
   "rules": []
 }
@@ -74,21 +74,20 @@ Add your Specify `repository` from which you want to pull your design tokens and
 Generate a `personalAccessToken` for the CLI and add it in your configuration.
 
 {% tabs %}
-{% tab title="JSON" %}
-<pre class="language-json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-<strong>  "personalAccessToken": "&#x3C;your-personal-access-token>",
-</strong>  "rules": []
-}
-</code></pre>
-{% endtab %}
-
-{% tab title="JavaScript" %}
+{% tab title="JavaScript (CommonJS)" %}
 <pre class="language-javascript" data-line-numbers><code class="lang-javascript">module.exports = {
-  repository: '@owner/name',
+  repository: '@workspace/repository',
 <strong>  personalAccessToken: '&#x3C;your-personal-access-token>',
 </strong>  rules: [],
 };
+</code></pre>
+{% endtab %}
+{% tab title="JSON" %}
+<pre class="language-json" data-line-numbers><code class="lang-json">{
+  "repository": "@workspace/repository",
+<strong>  "personalAccessToken": "&#x3C;your-personal-access-token>",
+</strong>  "rules": []
+}
 </code></pre>
 {% endtab %}
 {% endtabs %}

@@ -30,27 +30,27 @@ To sum things up, to generate files from Specify (e.g., `colors.css` or `icon.sv
 
 Specify provides the following endpoint to help you get design tokens and assets from a Specify repository.
 
-`https://api.specifyapp.com/repository/{owner}/{name}/design-tokens`
+`https://api.specifyapp.com/repository/{workspace}/{repository}/design-tokens`
 
 ### Parameters
 
-{% swagger method="post" path="" baseUrl="https://api.specifyapp.com/repository/{owner}/{name}/design-tokens" summary="" expanded="true" %}
+{% swagger method="post" path="" baseUrl="https://api.specifyapp.com/repository/{workspace}/{repository}/design-tokens" summary="" expanded="true" %}
 {% swagger-description %}
 Get design tokens and assets from a Specify repository.
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="owner" required="true" %}
+{% swagger-parameter in="path" name="workspace" required="true" %}
 The name of your organization in Specify.\
 
 
-For instance, in this URL `https://specifyapp.com/@specifyapp/Seeds/color` the owner is "@specifyapp".
+For instance, in this URL `https://specifyapp.com/@specifyapp/Seeds/color` the workspace is "@specifyapp".
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="name" required="true" %}
 The name of the Specify repository containing the design data you're requesting.\
 
 
-For instance, in this URL `https://specifyapp.com/@specifyapp/Seeds/color` the name is "Seeds".
+For instance, in this URL `https://specifyapp.com/@specifyapp/Seeds/color` the repository is "Seeds".
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="filter" type="Object" %}
@@ -113,7 +113,7 @@ Can contain an object or an array of objects. Each object corresponds to a speci
 Once you have your personal access token, you can pass it within the `Authorization` header of your request.
 
 ```bash
-curl -X POST 'https://api.specifyapp.com/repository/{owner}/{name}/design-tokens' \
+curl -X POST 'https://api.specifyapp.com/repository/{workspace}/{name}/design-tokens' \
   -H 'Authorization: <your-personal-access-token>' \
   -H 'Content-Type: application/json' \
   -d '{}'

@@ -1,9 +1,11 @@
 # Table of contents
 
+* [Specify Docs](README.md)
+
 ## Getting started
 
-* [What is Specify](README.md)
-* [Overview](<README (1).md>)
+* [What is Specify](<README (1).md>)
+* [Overview](getting-started/overview.md)
 * [Concepts](getting-started/concepts.md)
 * [Getting started](getting-started/getting-started.md)
 
@@ -15,6 +17,7 @@
 * [Templates](usage/templates.md)
 * [CLI](usage/cli.md)
 * [REST API](usage/rest-api.md)
+* [Best practices](usage/best-practices.md)
 
 ## Apps
 
@@ -28,5 +31,4 @@
 * [Discord](https://discord.com/invite/vMkDk4CbG4)
 * [YouTube](https://www.youtube.com/@specify7350)
 * [Twitter](https://twitter.com/specifyapp)
-* [Guide](https://specifyapp.com/guides)
 * [Help Center](https://help.specifyapp.com)

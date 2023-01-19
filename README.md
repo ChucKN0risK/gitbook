@@ -1,17 +1,13 @@
 ---
 description: >-
-  Learn more about how Specify works, what it is and why it helps you use design
-  tokens and assets at scale within your organization.
+  Learn about how to use and integrate Specify in your workflow to sync your
+  design tokens and assets in your design system.
 ---
 
-# What is Specify
-
-Specify provides the first Design API allowing you to send your design tokens and assets across your design system tools. Specify is built with this idea: configure once, synchronize anytime.
+# Specify Docs
 
 <figure><img src=".gitbook/assets/design-api-full-dark.jpg" alt=""><figcaption></figcaption></figure>
 
-Specify is composed of:
+Welcome to the Specify documentation where you can learn about how to use and integrate Specify in your workflow.
 
-* a database—to store [your design tokens and assets](usage/token-types.md)
-* a design API—to synchronize your design tokens and assets within your design system
-* a list of open source [parsers](usage/parsers.md)—to transform your design tokens and assets
+The easiest way to get started is to install our [CLI](usage/cli.md) and follow our Get started guide.

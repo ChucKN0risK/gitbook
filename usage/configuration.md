@@ -39,7 +39,7 @@ Let's say we have the following repository in Specify called "all-design-data" l
 We target it like this:
 
 {% tabs %}
-{% tab title="JavaScript" %}
+{% tab title="JavaScript (CommonJS)" %}
 <pre class="language-javascript" data-title=".specifyrc.js" data-line-numbers><code class="lang-javascript">module.exports = {
 <strong>  repository: '@acme-inc/all-design-data',
 </strong>  personalAccessToken: '&#x3C;your-personal-access-token>',
@@ -71,21 +71,21 @@ Need a personal access token? [Generate one ↗](https://specifyapp.com/user/per
 {% endhint %}
 
 {% tabs %}
-{% tab title="JSON" %}
-<pre class="language-json" data-line-numbers><code class="lang-json">{
-  "repository": "@owner/name",
-<strong>  "personalAccessToken": "&#x3C;your-personal-access-token>",
-</strong>  "rules": []
-}
-</code></pre>
-{% endtab %}
-
-{% tab title="JavaScript" %}
+{% tab title="JavaScript (CommonJS)" %}
 <pre class="language-javascript" data-line-numbers><code class="lang-javascript">module.exports = {
-  repository: '@owner/name',
+  repository: '@workspace/repository',
 <strong>  personalAccessToken: '&#x3C;your-personal-access-token>',
 </strong>  rules: [],
 };
+</code></pre>
+{% endtab %}
+
+{% tab title="JSON" %}
+<pre class="language-json" data-line-numbers><code class="lang-json">{
+  "repository": "@workspace/repository",
+<strong>  "personalAccessToken": "&#x3C;your-personal-access-token>",
+</strong>  "rules": []
+}
 </code></pre>
 {% endtab %}
 {% endtabs %}
@@ -109,13 +109,13 @@ interface Rule {
 };
 ```
 
-| Name      | Type                                                                                                                                          | Required                                  | Description                                                                                                                                                                                                                                                                                                                                                                                             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`    | `string`                                                                                                                                      | <mark style="color:yellow;">`true`</mark> | The name of your rule.                                                                                                                                                                                                                                                                                                                                                                                  |
-| `path`    | `string`                                                                                                                                      | <mark style="color:yellow;">`true`</mark> | <p>The path in your project where you want Specify to generate your design data.</p><p></p><p>If you want to pull <a href="token-types.md#bitmap">bitmap</a>, <a href="token-types.md#vector">vector</a> or <a href="token-types.md#font">font</a> token types you must set a directory (<a href="https://github.com/Specifyapp/parsers/tree/master/parsers/convert-font#output">Learn more ↗</a>).</p> |
+| Name      | Type                                                                                                                                          | Required                                  | Description                                                                                                                                                                                                                                                                                                                                                                                      |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `name`    | `string`                                                                                                                                      | <mark style="color:yellow;">`true`</mark> | The name of your rule.                                                                                                                                                                                                                                                                                                                                                                           |
+| `path`    | `string`                                                                                                                                      | <mark style="color:yellow;">`true`</mark> | <p>The path in your project where you want Specify to generate your design data.</p><p>If you want to pull <a href="token-types.md#bitmap">bitmap</a>, <a href="token-types.md#vector">vector</a> or <a href="token-types.md#font">font</a> token types you must set a directory (<a href="https://github.com/Specifyapp/parsers/tree/master/parsers/convert-font#output">Learn more ↗</a>).</p> |
 | `filter`  | <pre class="language-typescript" data-overflow="wrap"><code class="lang-typescript">Record&#x3C;'types', Array&#x3C;TokenType>>
-</code></pre> | <mark style="color:red;">`false`</mark>   | The list of [Token type](token-types.md) you want your rule to target.                                                                                                                                                                                                                                                                                                                                  |
-| `parsers` | `Array<Parser>`                                                                                                                               | <mark style="color:red;">`false`</mark>   | The parsers you want to apply to transform your [Token types](token-types.md). For further details see [Parsers](https://specifyapp.com/developers/configuration#heading-parsers).                                                                                                                                                                                                                      |
+</code></pre> | <mark style="color:red;">`false`</mark>   | The list of [Token type](token-types.md) you want your rule to target.                                                                                                                                                                                                                                                                                                                           |
+| `parsers` | `Array<Parser>`                                                                                                                               | <mark style="color:red;">`false`</mark>   | The parsers you want to apply to transform your [Token types](token-types.md). For further details see [Parsers](https://specifyapp.com/developers/configuration#heading-parsers).                                                                                                                                                                                                               |
 
 #### Parsers
 
@@ -130,11 +130,13 @@ interface Parser {
 }
 ```
 
-| Name      | Type                                                                                                  | Required                                  | Description                                                                                                                 |
-| --------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `name`    | `string`                                                                                              | <mark style="color:yellow;">`true`</mark> | The name of the parser. Choose from [all available parsers](parsers.md#all-parsers-available).                              |
+| Name      | Type                                                                                                  | Required                                                                                                                    | Description                                                                                    |
+| --------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `name`    | `string`                                                                                              | <mark style="color:yellow;">`true`</mark>                                                                                   | The name of the parser. Choose from [all available parsers](parsers.md#all-parsers-available). |
 | `options` | <pre class="language-typescript"><code class="lang-typescript">Record&#x3C;string, any>
-</code></pre> | <mark style="color:red;">`false`</mark>   | The options relative to the parser you apply. Each parser has its own options you can find in their respective README file. |
+</code></pre> |                                                                                                                             |                                                                                                |
+|           |                                                                                                       |                                                                                                                             |                                                                                                |
+|           | <mark style="color:red;">`false`</mark>                                                               | The options relative to the parser you apply. Each parser has its own options you can find in their respective README file. |                                                                                                |
 
 #### Example
 
@@ -146,7 +148,7 @@ Here's a rule named "Design Tokens" that:
 4. writes them in a `design-tokens.css` file inside a `styles` folder
 
 {% tabs %}
-{% tab title="JavaScript" %}
+{% tab title="JavaScript (CommonJS)" %}
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```javascript
 [
@@ -219,7 +221,7 @@ Run all examples by copying the code and running the `specify pull` command.
 Here's a basic configuration file that targets a Specify repository called `all-design-data` from the `@acme-inc` organization:
 
 {% tabs %}
-{% tab title="JavaScript" %}
+{% tab title="JavaScript (CommonJS)" %}
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```javascript
 module.exports = {
@@ -267,7 +269,7 @@ An example file containing all possible token types pulled from a Specify reposi
 Now let's update our previous configuration to only pull colors and transform them as CSS Custom Properties in HSL.
 
 {% tabs %}
-{% tab title="JavaScript" %}
+{% tab title="JavaScript (CommonJS)" %}
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```javascript
 module.exports = {

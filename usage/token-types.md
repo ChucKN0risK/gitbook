@@ -254,7 +254,7 @@ export interface TextStyleValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -276,7 +276,7 @@ export interface TextStyleValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -298,7 +298,7 @@ export interface TextStyleValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -320,7 +320,7 @@ export interface TextStyleValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -342,7 +342,7 @@ export interface TextStyleValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -364,7 +364,7 @@ export interface TextStyleValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -386,7 +386,7 @@ export interface TextStyleValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -408,7 +408,7 @@ export interface TextStyleValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -430,7 +430,7 @@ export interface TextStyleValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -508,7 +508,7 @@ interface VectorValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -530,7 +530,7 @@ interface VectorValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
@@ -552,7 +552,7 @@ interface VectorValue {
 {% code title=".specifyrc.js" lineNumbers="true" %}
 ```json
 {
-  "repository": "@owner/name",
+  "repository": "@workspace/repository",
   "personalAccessToken": "<your-personal-access-token>",
   "rules": [
     {
